@@ -1,0 +1,12 @@
+# git/godot-game-terminal
+# >>
+* text=auto eol=lf
+
+# >>
+*.ttf binary
+*.png binary
+
+# >>
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/.png export-ignore

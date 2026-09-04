@@ -1,0 +1,25 @@
+[gd_resource type="Theme" format=3 uid="uid://cq8sdq4otvaqa"]
+
+[ext_resource type="FontFile" uid="uid://c6tjfcoyw670h" path="res://addons/godot-game-terminal/core/tm_font.ttf" id="1_8ufo3"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ahyrg"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4cxoe"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jrdli"]
+content_margin_left = 10.0
+content_margin_top = 10.0
+content_margin_right = 10.0
+content_margin_bottom = 10.0
+
+[resource]
+default_font = ExtResource("1_8ufo3")
+LineEdit/colors/font_color = Color(0.9411765, 0.9411765, 0.9411765, 1)
+LineEdit/styles/focus = SubResource("StyleBoxEmpty_ahyrg")
+LineEdit/styles/normal = SubResource("StyleBoxEmpty_4cxoe")
+RichTextLabel/colors/default_color = Color(0.9411765, 0.9411765, 0.9411765, 1)
+RichTextLabel/styles/normal = SubResource("StyleBoxEmpty_jrdli")

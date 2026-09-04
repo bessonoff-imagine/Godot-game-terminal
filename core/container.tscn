@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bim127kg5bio0"]
+
+[ext_resource type="Theme" uid="uid://cq8sdq4otvaqa" path="res://addons/godot-game-terminal/core/tm_theme.tres" id="1_lq7bn"]
+[ext_resource type="Script" uid="uid://bdp2tjxtvjq7j" path="res://addons/godot-game-terminal/core/container.gd" id="2_7jbrq"]
+
+[node name="Terminal" type="Control" unique_id=1679538538]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_lq7bn")
+script = ExtResource("2_7jbrq")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=238575897]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.14733289, 0.14733289, 0.15594886, 0.90000004)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=971379167]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer" unique_id=892683334]
+layout_mode = 2
+size_flags_vertical = 3
+bbcode_enabled = true
+text = "RichTextLabel"
+scroll_following = true
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1046676823]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Label" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=739635868]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+text = "]"
+horizontal_alignment = 2
+
+[node name="LineEdit" type="LineEdit" parent="VBoxContainer/HBoxContainer" unique_id=470848249]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "LineEdit"
+context_menu_enabled = false
+clear_button_enabled = true
+caret_blink = true
