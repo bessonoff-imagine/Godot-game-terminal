@@ -21,7 +21,7 @@ A simple in-game terminal for Godot 4+
     ```bash
     git clone https://github.com/bessonoff-imagine/godot-game-terminal.git
     ```
-    Or download the latest [release](https://github.com/bessonoff-imagine/godot-game-terminal/releases/download/godot-game-terminal.zip).
+    Or download the latest [release](https://github.com/bessonoff-imagine/godot-game-terminal/releases/download/1.0/godot-game-terminal.zip).
 2. Enable the plugin in Godot: **Project Settings → Plugins → check `godot-game-terminal`**.
 
 ## Usage
@@ -110,7 +110,7 @@ func cast(spell: String) -> String:
     # or take the built-in command
     Terminal.exec("tm_layout 0.0 0.0 1.0 0.5 0.0 0.0 0.0 0.0")
 ```
-- Edit `_tm_vfx` in `../core/terminal.gd` for custom appearance
+- Edit `_tm_vfx` in **`../core/terminal.gd`** for custom appearance
 - Remove `open_logs` and `save_log` commands with functions from **`../core/container.gd`**, if needed
 
 ## License
